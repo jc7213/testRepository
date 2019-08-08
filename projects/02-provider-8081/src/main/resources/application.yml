@@ -1,0 +1,33 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    generate-ddl: true
+    show-sql: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql:///test_mybatis?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+  application:
+    name: dadsadasdc
+
+
+logging:
+  pattern:
+    console: level-%level %msg%n
+  level:
+      root: info
+      org.hibernate: info
+      org.hibernate.type.descriptor.sql.BasicBinder: trace
+      org.hibernate.hql.internal.ast.exec.BasicExecutor: trace
+      com.jc.provider: debug
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.100:8000/eureka
+
+  instance:
+    instance-id: abcde-9999
