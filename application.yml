@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  application:
+    name: abcmsc-config-dev
+  profiles: dev
+
+---
+
+spring:
+  application:
+    name: abcmsc-config-test
+  profiles: test
