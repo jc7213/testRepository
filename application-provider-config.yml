@@ -18,7 +18,8 @@ spring:
     url: jdbc:mysql:///test02?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
     username: root
     password: 123456
-
+    main:
+        allow-bean-definition-overriding: true
     eureka:
       client:
         service-url:
@@ -44,7 +45,8 @@ spring:
     url: jdbc:mysql:///test03?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
     username: root
     password: 123456
-
+    main:
+        allow-bean-definition-overriding: true
     eureka:
       client:
         service-url:
