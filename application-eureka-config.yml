@@ -23,7 +23,7 @@ spring:
     name: abcms-eurekaServer-config
 
 server:
-  port: 8200
+  port: 8400
 
 eureka:
   instance:
@@ -32,4 +32,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8200/eureka
+      defaultZone: http://localhost:8400/eureka
